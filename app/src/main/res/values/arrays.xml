@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="listsSortDisplay">
+		<item>Do not sort</item>
+		<item>Sort by name</item>
+	</string-array>
+	<string-array name="listsSortReturn">
+		<item>0</item>
+		<item>1</item>
+	</string-array>
+	
+	<string-array name="tasksSortDisplay">
+		<item>Do not sort</item>
+		<item>Sort by name</item>
+		<item>Sort by priority</item>
+		<item>Sort by state</item>
+	</string-array>
+	<string-array name="tasksSortReturn">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+	</string-array>
+</resources>
+

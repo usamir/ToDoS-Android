@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<EditTextPreference android:dialogTitle="Number of lists"
+		android:title="Number of lists" android:dialogMessage="Enter maximum number of lists"
+		android:key="maxListsNum" android:summary="Maximum number of lists"></EditTextPreference>
+	<EditTextPreference android:dialogTitle="Number of tasks per list"
+		android:dialogMessage="Enter maximum number of tasks per list"
+		android:key="maxTasksNum" android:title="Number of tasks"
+		android:summary="Maximum number of tasks per list"></EditTextPreference>
+	<PreferenceCategory android:title="Sort options">
+		<ListPreference android:entries="@array/listsSortDisplay"
+			android:entryValues="@array/listsSortReturn" android:key="listsSort" android:title="Sort lists" android:dialogTitle="Sort todo lists by"></ListPreference>
+		<ListPreference android:entries="@array/tasksSortDisplay" android:key="tasksSort" android:entryValues="@array/tasksSortReturn" android:title="Sort tasks" android:dialogTitle="Sort tasks by"></ListPreference>
+	</PreferenceCategory>
+	
+
+</PreferenceScreen>
