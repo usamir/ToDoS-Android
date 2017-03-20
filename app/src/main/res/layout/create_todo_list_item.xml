@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<LinearLayout android:layout_height="wrap_content"
+		android:layout_width="match_parent" android:orientation="vertical">
+		<TextView android:text="Task name:" android:layout_width="wrap_content"
+			android:layout_height="wrap_content"></TextView>
+	</LinearLayout>
+	<EditText android:id="@+id/editListItemName"
+		android:layout_height="wrap_content" android:layout_width="match_parent"></EditText>
+	<LinearLayout android:layout_height="wrap_content"
+		android:layout_width="match_parent" android:orientation="vertical">
+
+		<TextView android:text="Priority:" android:layout_width="wrap_content"
+			android:layout_height="wrap_content"></TextView>
+		<RadioGroup android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:orientation="horizontal"
+			android:id="@+id/radioGroupPriority">
+
+			<ImageView android:id="@+id/imgPriority1" android:src="@android:drawable/presence_online"
+				android:layout_width="wrap_content" android:layout_height="fill_parent" />
+			<RadioButton android:id="@+id/rbPriority1"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_marginRight="10dp"></RadioButton>
+			<ImageView android:id="@+id/imgPriority2" android:src="@android:drawable/presence_away"
+				android:layout_width="wrap_content" android:layout_height="fill_parent" />
+			<RadioButton android:id="@+id/rbPriority2"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_marginRight="10dp"></RadioButton>
+			<ImageView android:id="@+id/imgPriority3" android:src="@android:drawable/presence_busy"
+				android:layout_width="wrap_content" android:layout_height="fill_parent" />
+			<RadioButton android:id="@+id/rbPriority3"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_marginRight="10dp"></RadioButton>
+		</RadioGroup>
+
+		<TextView android:text="Description:" android:layout_width="wrap_content"
+			android:layout_height="wrap_content"></TextView>
+
+	</LinearLayout>
+	<EditText android:id="@+id/editListItemDescription"
+		android:layout_weight="1" android:layout_height="0dp" android:gravity="top"
+		android:layout_width="match_parent"></EditText>
+
+	<LinearLayout android:layout_height="wrap_content"
+		android:layout_width="fill_parent" android:orientation="horizontal">
+		<TextView android:text="Task ends(date/time): "
+			android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+		<TextView android:id="@+id/dateDisplay" android:layout_width="wrap_content"
+			android:layout_height="wrap_content"></TextView>
+		<TextView android:id="@+id/timeDisplay" android:layout_width="wrap_content"
+			android:layout_height="wrap_content"></TextView>
+	</LinearLayout>
+
+	<LinearLayout android:layout_height="wrap_content"
+		android:layout_width="match_parent" android:orientation="horizontal">
+		<LinearLayout android:layout_height="wrap_content"
+			android:layout_weight="1" android:layout_width="0dp"
+			android:orientation="vertical">
+			<Button android:text="Set date" android:id="@+id/btnSetAlarmDate"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"></Button>
+
+			<Button android:id="@+id/btnCreateTodoListItem"
+				android:layout_height="wrap_content" android:layout_width="fill_parent"
+				android:text="Save"></Button>
+		</LinearLayout>
+
+
+		<LinearLayout android:layout_height="wrap_content"
+			android:layout_weight="1" android:layout_width="0dp"
+			android:orientation="vertical">
+			<Button android:text="Set time" android:id="@+id/btnSetAlarmTime"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"></Button>
+
+			<Button android:text="Cancel" android:id="@+id/btnCancelCreateTodoListItem"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"></Button>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

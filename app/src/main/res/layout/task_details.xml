@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<TextView android:id="@+id/taskDetailsTaskName"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+	<TextView android:id="@+id/taskDetailsTaskDetails"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+	<TextView android:id="@+id/taskDetailsIsActive"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="horizontal" android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<TextView android:text="Task priority:" android:layout_width="wrap_content"
+			android:layout_height="wrap_content"></TextView>
+		<ImageView android:id="@+id/taskDetailsPriority"
+			android:layout_height="wrap_content" android:layout_width="wrap_content" />
+	</LinearLayout>
+
+	<TextView android:id="@+id/taskDetailsCreationDate"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+	<TextView android:id="@+id/taskDetailsEndDate"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+		
+</LinearLayout>
