@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="hello">Hello World, ToDoSActivity!</string>
-    <string name="app_name">ToDoS</string>
-    <string name="DATE_FORMAT_ISO8601">"yyyy-MM-dd'T'HH:mm:ss.SSS"</string>
-</resources>
